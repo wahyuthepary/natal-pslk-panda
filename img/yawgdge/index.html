@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+<audio id="myAudio" controls>
+    <source src="natal.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    // Mendapatkan elemen audio
+    var audio = document.getElementById("myAudio");
+
+    // Fungsi untuk memainkan audio
+    function playAudio() {
+        audio.play();
+    }
+
+    // Fungsi untuk menghentikan audio
+    function pauseAudio() {
+        audio.pause();
+    }
+
+    // Fungsi untuk mengatur ulang audio ke awal
+    function resetAudio() {
+        audio.currentTime = 0;
+    }
+</script>
+
+</body>
+</html>

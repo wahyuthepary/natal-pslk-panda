@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Sekolah</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            text-transform: capitalize;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        .about{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .about img{
+            max-width: 320px;
+            height: auto;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .about-text{
+            border: solid 2px white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .about-text h2{
+            color: red;
+            font-weight: bold;
+        }
+        .about-text h4{
+            color: white;
+            font: 200;
+        }
+        .about-text p{
+        color: var(--second-color);
+        font-palette: var(--p-font);
+        line-height: 1.8;
+        margin-bottom: 4rem;
+        }
+        .btn{
+            display: inline-block;
+            padding: 12px 28px;
+            background: red;
+            border-radius: 5px;
+            color: var(--text-color);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: all .45s ease;
+            text-decoration: none;
+        }
+        .btn:hover{
+            transform: scale(0.9);
+        }
+        @media (max-width: 1480px){
+        header{
+            padding: 12px 2.5%;
+            transition: .1s;
+        }
+        header.sticky{
+            padding: 10px 2.5%;
+            transition: .1s;
+        }
+        section{
+            padding: 110px 3% 60px;
+        }
+        .end{
+            padding: 15px 3%;
+        }
+        }
+        @media (max-width: 1100px){
+        :root{
+            --big-font: 4rem;
+            --h2-font: 2.5rem;
+            --p-font: 1.1rem;
+            transition: 1s;
+        }
+        .home-text h3{
+            font-size: 2.5rem;
+        }
+        .home{
+            height: 100vh;
+        }
+        }
+        @media (max-width: 920px){
+        .about{
+            grid-template-columns: 1fr;
+        }
+        .about-img{
+            text-align: center;
+            order: 2;
+        }
+        .about-img img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        .contact{grid-template-columns: 1fr;
+        }
+        .box p iframe{
+            width: 200px;
+            height: 200px;
+        }
+        }
+        @media (max-width: 768px){
+        .mobile-menu{
+            display: block;
+        }
+        header ul li {
+            display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="about" id="about">
+        <div class="about-img">
+          <img src="sekolah.jpg">
+        </div>
+    
+        <div class="about-text">
+          <h2>Alamat <span>/ Lokasi Sekolah</span></h2>
+          <!-- <h4>Kepada orang tua kami <span>&</span> alumni pslk</h4> -->
+          <h4>Nama Sekolah: SMK Putra Anda Binjai </h4>
+          <h4>Alamat: Jl. Walter Mongonsidi No.22, Satria, Kec. Binjai Kota, Kota Binjai, Sumatera Utara 20741 </h4>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.9435213180345!2d98.47592692344692!3d3.600412550216122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3030d766887bf2c1%3A0xd7f9985763b58d7e!2sSMK%20Putra%20Anda%20Binjai!5e0!3m2!1sid!2sid!4v1700619581006!5m2!1sid!2sid" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          <a href="../index.html#services" class="btn">Kembali</a>
+        </div>
+    </section>
+</body>
+</html>

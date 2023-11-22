@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            text-transform: capitalize;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+        }
+        .about video{
+        max-width: 445px;
+        height: auto;
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        }
+        .about-text{
+            border: solid 2px white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .about-text h2{
+            color: red;
+            font-weight: bold;
+        }
+        .about-text h4{
+            color: white;
+            font: 200;
+        }
+        .about-text p{
+        color: var(--second-color);
+        font-palette: var(--p-font);
+        line-height: 1.8;
+        margin-bottom: 4rem;
+        }
+        .btn{
+            display: inline-block;
+            padding: 12px 28px;
+            background: red;
+            border-radius: 5px;
+            color: var(--text-color);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: all .45s ease;
+            text-decoration: none;
+        }
+        .btn:hover{
+            transform: scale(0.9);
+        }
+        @media (max-width: 1480px){
+        header{
+            padding: 12px 2.5%;
+            transition: .1s;
+        }
+        header.sticky{
+            padding: 10px 2.5%;
+            transition: .1s;
+        }
+        section{
+            padding: 110px 3% 60px;
+        }
+        .end{
+            padding: 15px 3%;
+        }
+        }
+        @media (max-width: 1100px){
+        :root{
+            --big-font: 4rem;
+            --h2-font: 2.5rem;
+            --p-font: 1.1rem;
+            transition: 1s;
+        }
+        .home-text h3{
+            font-size: 2.5rem;
+        }
+        .home{
+            height: 100vh;
+        }
+        }
+        @media (max-width: 920px){
+        .about{
+            grid-template-columns: 1fr;
+        }
+        .about-img{
+            text-align: center;
+            order: 2;
+        }
+        .about-img img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+        .contact{grid-template-columns: 1fr;
+        }
+        .box p iframe{
+            width: 200px;
+            height: 200px;
+        }
+        }
+        @media (max-width: 768px){
+        .mobile-menu{
+            display: block;
+        }
+        header ul li {
+            display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="about" id="about">
+        <div class="about-img">
+            <video playsinline autoplay muted loop>
+                <source src="Christmas (1).mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        <div class="about-text">
+          <h2>Undangan </h2>
+          <!-- <h4>Kepada orang tua kami <span>&</span> alumni pslk</h4> -->
+          <h4>kepada : orang tua kami dan alumni pslk putra anda binjai </h4>
+          <p style="color: white;">syalom... <br> puji dan syukur kita panjatkan kepada bapa di sorga karena atas berkat dan kasihnya kita bisa merayakan hari natal.
+          kami dari PSLK smk putra anda binjai, mengundang orang tua dan saudara/i kami untuk hadir bersama sama merayakan
+          hari natal yang di adakan <br> Pada: <br> hari: sabtu <br> Tanggal: 2 Desember 2023 <br> alamat: Jl. Soekarno Hatta Gg. Gereja No.Km. 20, Dataran Tinggi, Kec. Binjai Tim. <p>         <a href="../index.html#services" class="btn">Kembali</a>
+        </div>
+    </section>
+</body>
+</html>
